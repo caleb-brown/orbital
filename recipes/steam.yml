@@ -1,0 +1,5 @@
+modules:
+- type: dnf
+  install:
+    packages:
+      - steam
