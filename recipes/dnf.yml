@@ -1,0 +1,87 @@
+modules:
+- type: dnf
+  install:
+    skip-unavailable: true
+    packages:
+      - wl-clipboard
+      - distrobox
+      - alsa-firmware
+      - polkit
+      - dbus-tools
+      - dbus-daemon
+      - qt5-wayland
+      - qt6-wayland
+      - wireplumber
+      - pipewire
+      - pulseaudio-utils
+      - network-manager-applet
+      - NetworkManager-openvpn
+      - NetworkManager-openvpn-gnome
+      - NetworkManager-openconnect
+      - NetworkManager-openconnect-gnome
+      - bluez
+      - bluez-tools
+      - blueman
+      - nautilus
+      - gvfs-mtp
+      - gvfs-gphoto2
+      - gvfs-smb
+      - gvfs-nfs
+      - gvfs-fuse
+      - gvfs-archive
+      - heif-pixbuf-loader
+      - ffmpeg
+      - ffmpeg-libs
+      - ffmpegthumbnailer
+      - pipewire-libs-extra
+      - libfdk-aac
+      - gstreamer1-plugins-bad
+      - gstreamer1-plugins-ugly 
+      - gnome-keyring
+      - luajit
+      - luajit-devel
+      - dconf
+      - dconf-editor
+      - gsettings-desktop-schemas
+      # specifically for testing in VMs, i.e GNOME-boxes
+      - spice-server
+      - spice-vdagent
+      - spice-webdavd
+      # all my personal stuff, niri, etc
+      - mullvad
+      - micro
+      - starship
+      - swww
+      - swaync
+      - niri
+      - greetd
+      - greetd-selinux
+      - xwayland-satellite
+      - adw-gtk3-theme
+      - xdg-desktop-portal-gnome
+      - firacode-nerd-fonts
+      - fish
+      - gtklock
+      - wofi
+      - fuzzel
+      - eza
+      - bat
+      - cosmic-greeter
+      - doas
+      - tailscale
+      - alacritty
+      - librewolf
+      - hyfetch
+      - fastfetch
+      - nwg-look
+      # adb, fastboot, shit like that
+      - android-tools 
+  remove:
+    packages:
+      - cosmic-session
+      - cosmic-term
+      - cosmic-files
+      - cosmic-settings
+      - cosmic-screenshot
+      - cosmic-workspaces
+      - xdg-desktop-portal-cosmic
