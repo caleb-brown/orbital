@@ -1,0 +1,12 @@
+# Niri compositor
+modules:
+  - type: rpm-ostree
+    install:
+      - niri
+      - waybar
+      - swaylock
+      - swayidle
+      - wofi
+      - wl-clipboard
+      - grim
+      - slurp
