@@ -1,0 +1,5 @@
+# Noctalia shell
+modules:
+  - type: rpm-ostree
+    install:
+      - noctalia
