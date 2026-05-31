@@ -1,0 +1,14 @@
+# COSMIC Desktop Environment
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/atim/cosmic/repo/fedora-46/atim-cosmic-fedora-46.repo
+    install:
+      - cosmic-desktop
+      - cosmic-session
+      - cosmic-bg
+      - cosmic-greeter
+      - cosmic-settings
+      - cosmic-terminal
+      - cosmic-app-library
+      - xdg-desktop-portal-cosmic
